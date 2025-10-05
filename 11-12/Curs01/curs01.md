@@ -32,7 +32,7 @@ De obicei, Backtracking-ul are două clase de algoritmi:
 * algoritmi de complexitate **exponențială**
 * algoritmi de complexitate **factorial**
 
-Algoritmii de complexitate exponențială, de obicei, au la bază generarea de submulțimi. Ca exemplu, aveți funcția din sursa [`expo.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/09/Curs01/expo.cpp) atașată mai jos:
+Algoritmii de complexitate exponențială, de obicei, au la bază generarea de submulțimi. Ca exemplu, aveți funcția din sursa [`expo.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/11-12/Curs01/expo.cpp) atașată mai jos:
 
 ```cpp
 void bkt (int k, int n)
@@ -54,7 +54,7 @@ Această funcție va genera toate submulțimile ordonate lexicografic ale mulți
 
 ## Generarea de permutări
 
-Algoritmii de complexitate factorială au la bază generarea de permutări. O implementare aveți în funcția [`factorial.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/09/Curs01/factorial.cpp), pe care o găsiți mai jos:
+Algoritmii de complexitate factorială au la bază generarea de permutări. O implementare aveți în funcția [`factorial.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/11-12/Curs01/factorial.cpp), pe care o găsiți mai jos:
 
 ```cpp
 void bkt (int k)
