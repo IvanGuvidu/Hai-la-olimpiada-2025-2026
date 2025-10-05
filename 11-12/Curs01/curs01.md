@@ -17,6 +17,11 @@ Suportul teoretic pentru curs va fi inspirat din următoarele resurse:
 * [CP-algorithms](https://cp-algorithms.com/)
 * [USACO guide](https://usaco.guide/)
 
+Listele cu toate probleme pentru OJI/ONI le găsiți mai jos:
+
+* [OJI](https://kilonova.ro/problem_lists/459/progress)
+* [ONI](https://kilonova.ro/problem_lists/528/progress)
+
 Stilul meu de predare este să acoperim noțiuni teoretice la curs, discutăm probleme, iar implementările de la problemele discutate vă rămân vouă ca temă pentru acasă. Consider că în acest mod putem să abordăm mai multe probleme în cele două ore pe care le avem noi săptămânal.
 
 O să încercăm (sperăm) lunar să vă dăm câte o simulare cu probleme adecvate de OJI-ONI.
