@@ -92,4 +92,9 @@ Această funcție va genera toate permutările ordonate lexicografic ale mulțim
 * [Dușman](https://infoarena.ro/problema/dusman)
 * [Tricouri](https://infoarena.ro/problema/tricouri)
 
+## Probleme suplimentare
+
+* [Zone](https://infoarena.ro/problema/zone)
+* [Proeminența](https://kilonova.ro/problems/1598)
+
 #### Cursul de azi a fost ținut de Ivan Andrei-Cristian.
