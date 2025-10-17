@@ -24,7 +24,7 @@ De obicei, o muchie de la nodul $X$ la nodul $Y$ (adică orientată de la $X$ la
 
 ## Reținerea grafurilor în memorie
 
-Reținerea grafurilor în memorie poate părea un pic provocator la început, dar, în practică, nu e deloc greu. Grafurile putem să le reținem în două moduri:
+Reținerea grafurilor în memorie poate părea un pic greu la început, dar, în practică, nu e deloc greu. Grafurile putem să le reținem în două moduri:
 
 * Matrice de Adiacență
 
@@ -128,12 +128,12 @@ Dupa cum vedeți, fiecare parcurgere ne oferă avantaje diferite, iar alegerea �
 
 ## Probleme
 
-* [Patrol](https://kilonova.ro/problems/302?list_id=76)
-* [Labirint](https://kilonova.ro/problems/938?list_id=270)
 * [Barbar](https://infoarena.ro/problema/barbar)
-* [Pulsar](https://kilonova.ro/problems/285)
 * [Aventura](https://kilonova.ro/problems/3615)
 * [Reinvent](https://kilonova.ro/problems/174)
+* [Patrol](https://kilonova.ro/problems/302?list_id=76)
+* [Labirint](https://kilonova.ro/problems/938?list_id=270)
+* [Pulsar](https://kilonova.ro/problems/285)
 
 ## Resurse suplimentare
 
