@@ -70,7 +70,7 @@ Parcurgerea grafurilor este un subiect foarte important, deoarece multe probleme
 
 Mai știți cum funcționa Fill-ul? Exact la fel funcționează și DFS-ul. Pornim dintr-un nod, îl marcăm ca vizitat și apoi încercăm să mergem cât mai adânc posibil pe fiecare ramură. Dacă nu mai putem înainta, ne întoarcem înapoi și încercăm o altă ramură.
 
-Mai jos, o să vă las un exemplu de implementare a DFS-ului folosind liste de adiacență (sursa completă o găsiți în `dfs.cpp`):
+Mai jos, o să vă las un exemplu de implementare a DFS-ului folosind liste de adiacență (sursa completă o găsiți în [`dfs.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/11-12/Curs02/dfs.cpp)):
 
 ```cpp
 bool vizitat[maxN];      // vector pentru a marca nodurile vizitate
@@ -92,7 +92,7 @@ Astfel, acest algoritm va avea complexitate $O(N + M)$, unde $N$ este numărul d
 
 * Parcurgerea în Lățime (**BFS** - Breadth First Search)
 
-BFS-ul este foarte asemănător cu Algoritmul lui Lee. Pornim dintr-un nod, îl marcăm ca vizitat și îl adăugăm într-o coadă. Apoi, în fiecare pas, scoatem un nod din coadă, vizităm toți vecinii săi nevizitați, îi marcăm ca vizitați și îi adăugăm în coadă. Acest proces continuă până când coada este goală. Cu o parcurgere BFS, putem găsi cel mai scurt drum într-un graf (fără costuri diferite de $1$, o să avem un curs dedicat pentru cum putem trata grafurile cu costuri). Mai jos, o să vă las un exemplu de implementare a BFS-ului folosind matrice de adiacență (sursa completă o găsiți în `bfs.cpp`):
+BFS-ul este foarte asemănător cu Algoritmul lui Lee. Pornim dintr-un nod, îl marcăm ca vizitat și îl adăugăm într-o coadă. Apoi, în fiecare pas, scoatem un nod din coadă, vizităm toți vecinii săi nevizitați, îi marcăm ca vizitați și îi adăugăm în coadă. Acest proces continuă până când coada este goală. Cu o parcurgere BFS, putem găsi cel mai scurt drum într-un graf (fără costuri diferite de $1$, o să avem un curs dedicat pentru cum putem trata grafurile cu costuri). Mai jos, o să vă las un exemplu de implementare a BFS-ului folosind matrice de adiacență (sursa completă o găsiți în [`bfs.cpp`](https://github.com/IvanGuvidu/Hai-la-olimpiada-2025-2026/blob/main/11-12/Curs02/bfs.cpp)):
 
 ```cpp
 queue <int> q;    // Coada pentru BFS
