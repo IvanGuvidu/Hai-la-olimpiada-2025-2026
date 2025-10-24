@@ -127,19 +127,19 @@ Trebuie să găsim cum putem maximiza costul drumului prin matrice. Prima dilem�
 
 Astfel, putem defini următoarele dinamici:
 
-$$
-dp1[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j) \text{ din dreapta sus} \\
-dp2[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j) \text{ din stânga jos} \\
-dp[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j)
-$$
+$$dp1[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j) \text{ din dreapta sus}$$
+
+$$dp2[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j) \text{ din stânga jos}$$
+
+$$dp[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j)$$
 
 Relațiile de recurență sunt:
 
-$$
-dp1[i][j] = \max(dp1[i-1][j + 1], dp[i - 1][j-1]) + a[i][j] \\
-dp2[i][j] = \max(dp2[i + 1][j - 1], dp[i - 1][j - 1]) + a[i][j] \\
-dp[i][j] = \max(dp1[i][j], \ dp2[i][j])
-$$
+$$dp1[i][j] = \max(dp1[i-1][j + 1], dp[i - 1][j-1]) + a[i][j]$$
+
+$$dp2[i][j] = \max(dp2[i + 1][j - 1], dp[i - 1][j - 1]) + a[i][j]$$
+
+$$dp[i][j] = \max(dp1[i][j], \ dp2[i][j])$$
 
 Astfel, complexitatea acestei soluții este $O(N^2)$. Răspunsul final se va afla în $dp[N][N]$.
 
