@@ -1,2 +1,2 @@
-# Curs 3 - clasa a 9-a
+# Curs 2 - clasa a 9-a
 
