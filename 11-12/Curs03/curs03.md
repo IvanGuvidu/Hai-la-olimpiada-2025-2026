@@ -67,7 +67,7 @@ $$
 Relația de recurență va fi:
 
 $$
-dp[i][j] = dp[i][j-1] + dp[i - value[j]][j - 1]
+dp[i][j] = dp[i][j-1] + dp[i - value[j]][j]
 $$
 
 Astfel, obținem complexitate $O(N \cdot X)$ unde $N$ este numărul de monede și $X$ este suma țintă. Răspunsul final se va afla în $dp[X][N]$. Soluția la a doua problemă o găsiți în [`coin_combinations_2.cpp`](coin_combinations_2.cpp).
