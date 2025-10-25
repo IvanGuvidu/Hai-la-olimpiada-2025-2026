@@ -97,6 +97,7 @@ $$
 
 Astfel, complexitatea acestei soluții este $O(N \log N)$ datorită căutării binare pentru fiecare element din șir. Răspunsul final va fi lungimea maximă din tabloul dp. O implementare a soluției o găsiți în [`lis.cpp`](lis.cpp).
 
+Problemă suplimentară discutată la LIS: [Sandwich](https://kilonova.ro/problems/3478)
 
 ## 5. Problema rucsacului
 
@@ -135,9 +136,9 @@ $$dp[i][j] = \text{costul maxim pentru a ajunge în poziția } (i, j)$$
 
 Relațiile de recurență sunt:
 
-$$dp1[i][j] = \max(dp1[i-1][j + 1], dp[i - 1][j-1]) + a[i][j]$$
+$$dp1[i][j] = \max(dp1[i-1][j + 1], dp[i - 1][j], dp[i][j - 1]) + a[i][j]$$
 
-$$dp2[i][j] = \max(dp2[i + 1][j - 1], dp[i - 1][j - 1]) + a[i][j]$$
+$$dp2[i][j] = \max(dp2[i + 1][j - 1], dp[i - 1][j], dp[i][j-1]) + a[i][j]$$
 
 $$dp[i][j] = \max(dp1[i][j], \ dp2[i][j])$$
 
