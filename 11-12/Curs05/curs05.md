@@ -101,3 +101,5 @@ Deci, pentru a calcula $F_k$, trebuie doar să ridicăm matricea la puterea $k-1
 * [Iepuri](https://infoarena.ro/problema/iepuri)
 * [Ecu](https://infoarena.ro/problema/ecu)
 * [2șah](https://infoarena.ro/problema/2sah)
+
+#### Cursul de azi a fost ținut de Ivan Andrei-Cristian.
