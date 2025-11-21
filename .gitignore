@@ -3,3 +3,7 @@
 
 # vscode
 .vscode/
+
+# for testing
+*test.in
+*test.out
