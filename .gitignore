@@ -7,3 +7,7 @@
 # for testing
 *test.in
 *test.out
+
+# macOS metadata files
+**/.DS_Store
+.DS_Store
