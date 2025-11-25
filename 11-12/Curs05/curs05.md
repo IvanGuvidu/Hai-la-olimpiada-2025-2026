@@ -48,7 +48,7 @@ Pentru fiecare poziție din subsecvență, vom lua fiecare configurație posibil
 
 $$dp[i][j] = \max(dp[i][j], dp[i-2^k][2^k \oplus j]) \text{ , dacă } k \text{ nu este în } conf(j)$$
 
-În final, răspunsul va fi în $dp[N][2^X - 1]$, unde $X = \lfloor{\log_2 N}\rfloor$. Astfel, complexitatea acestei soluții este $\approx O(N^2)$. O implementare a soluției o găsiți în [`recyclebin.cpp`](recyclebin.cpp).
+În final, răspunsul va fi în $dp[N][i]$ maxim, unde $0 \leq i < 2^N$. Astfel, complexitatea acestei soluții este $\approx O(N^2)$. O implementare a soluției o găsiți în [`recyclebin.cpp`](recyclebin.cpp).
 
 ## Exponentiere în timp logaritmic (pe matrice)
 
