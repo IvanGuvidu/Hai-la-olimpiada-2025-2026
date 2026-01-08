@@ -110,8 +110,9 @@ Vom nota $lsb(x) = x \ \text{AND} \  (-x)$, adică cel mai din dreapta (puțin s
 
 Fiecare nod din AIB reprezintă suma unui interval de lungime $lsb(index_{nod})$. Mai exact, nodul cu indexul $x$ reprezintă suma elementelor din intervalul $[x - lsb(x) + 1, x]$.
 
+
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/16-node_Fenwick_tree.svg/2560px-16-node_Fenwick_tree.svg.png" alt="Fenwick Tree">
+    <img src="16-node_Fenwick_tree.svg" alt="Fenwick Tree" style="max-width: 100%; height: auto;">
 </p>
 
 
