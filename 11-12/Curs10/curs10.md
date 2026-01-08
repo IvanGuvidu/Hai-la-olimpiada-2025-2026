@@ -105,13 +105,13 @@ Arborii de intervale pot fi folosiți pentru a rezolva o varietate de probleme, 
 Varianta mai simplă a arborilor de intervale **dar cu restrângeri** este arborele indexat binar (Fenwick Tree). Acesta permite doar operații de tipul _update pe o poziție_ și _query pe prefix_. Complexitatea fiecărei operații este $O(\log N)$, iar implementarea este mai simplă decât cea a arborilor de intervale.
 
 
-Vom nota $lsb(x) = x \& (-x)$, adică cel mai din dreapta (puțin semnificativ) bit setat al lui $x$. De exemplu, $lsb(12) = lsb(1100_2) = 4$.
+Vom nota $lsb(x) = x \ \text{AND} \  (-x)$, adică cel mai din dreapta (puțin semnificativ) bit setat al lui $x$. De exemplu, $lsb(12) = lsb(1100_2) = 4$.
 
 
-Fiecare nod din AIB reprezintă suma unui interval de lungime $lsb(index\_nod)$. Mai exact, nodul cu indexul $x$ reprezintă suma elementelor din intervalul $[x - lsb(x) + 1, x]$.
+Fiecare nod din AIB reprezintă suma unui interval de lungime $lsb(index_{nod})$. Mai exact, nodul cu indexul $x$ reprezintă suma elementelor din intervalul $[x - lsb(x) + 1, x]$.
 
 <p align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/16-node_Fenwick_tree.svg/2560px-16-node_Fenwick_tree.svg.png">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/16-node_Fenwick_tree.svg/2560px-16-node_Fenwick_tree.svg.png" alt="Fenwick Tree">
 </p>
 
 
