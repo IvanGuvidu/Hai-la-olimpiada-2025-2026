@@ -1,6 +1,7 @@
 # Probleme diverse #1
 
 Înregistrare curs: [aici](https://youtu.be/_7N169hbSak?si=gXRq0KMzfJM-ww8G)
+
 Tablă: [aici](https://ctipub-my.sharepoint.com/:o:/g/personal/andrei_ivan0605_stud_acs_upb_ro/IgC2R-qHK8w9T6F0uij_F2mwAYueInPsZz0LNE2VtSKPGwE?e=7gieC1)
 
 ## Probleme
