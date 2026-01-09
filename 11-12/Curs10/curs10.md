@@ -16,7 +16,7 @@ Un nod al arborelui de intervale conține următoarele informații:
 De obicei, dacă indexul nodului este $x$, atunci fiul stâng are indexul $2x$, iar fiul drept are indexul $2x + 1$. O limită superioară pentru numărul de noduri este $4N$, unde $N$ este numărul de elemente din vectorul inițial. Fie $m = (l + r) / 2$. Atunci, fiul stâng al nodului $x$ va reprezenta intervalul $[l, m]$, iar fiul drept va reprezenta intervalul $[m + 1, r]$. Când ajungem la un nod care are $l = r$, înseamnă că am ajuns la o frunză, care reprezintă un singur element din vectorul inițial.
 
 <p align="center">
-  <img src="https://en.algorithmica.org/hpc/data-structures/img/segtree-path.png" alt="Segment Tree Path">
+    <img src="segtree-path.png" alt="Fenwick Tree" style="max-width: 100%; height: auto;">
 </p>
 
 
@@ -162,7 +162,7 @@ int query (int poz)
 ```
 
 
-**Atenție!!** AIB-urile nu pot fi adaptate pentru update-uri pe interval, sau operații mai complexe (minim, maxim, gcd). De asemenea, dacă încercați să folosiți AIB în loc de AINT în unele tipuri de probleme, vă puteți trezi cu complexitate $log^2 N$ în loc de $log N$. Vom vedea astfel de cazuri în problemele viitoare.
+**Atenție!!** AIB-urile nu pot fi adaptate pentru update-uri pe interval, sau operații mai complexe (minim, maxim, gcd). De asemenea, dacă încercați să folosiți AIB în loc de AINT în unele tipuri de probleme, vă puteți trezi cu complexitate $log^2 N$ în loc de $log N$. Vom vedea astfel de cazuri în problemele următoare.
 
 
 ## Update-uri pe interval, AINT cu Lazy Propagation
