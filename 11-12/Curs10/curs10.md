@@ -239,7 +239,7 @@ long long query (int l, int r, int poz, int nod)
 ```
 
 
-Observați că în rest funcțiile de update și query rămân identice, doar adăugăm câte un apel de `push()` la începutul fiecărei funcții. Funcția `push()` se ocupă de aplicarea actualizării în așteptare și propagarea acesteia către fiii nodului curent. Astfel, putem face update-uri pe intervale și interogări pe poziții individuale în timp $O(\log N)$.
+Observați că în rest funcțiile de update și query rămân identice, doar adăugăm câte un apel de `push()` la începutul fiecărei funcții. Funcția `push()` se ocupă de aplicarea actualizării în așteptare și propagarea acesteia către fiii nodului curent. Astfel, putem face update-uri pe intervale și interogări pe poziții individuale / pe intervale în timp $O(\log N)$.
 
 
 ## Resurse și probleme
@@ -256,5 +256,6 @@ Observați că în rest funcțiile de update și query rămân identice, doar ad
 * [Namlei - Infoarena](https://infoarena.ro/problema/namlei)
 * [Connect the tree - Kilonova](https://kilonova.ro/problems/970)
 * [Lexicografic - Kilonova](https://kilonova.ro/problems/7)
+* [Neapuiu - Infoarena](https://infoarena.ro/problema/neapuiu)
 
 #### Cursul de azi a fost ținut de Ivan Andrei-Cristian.
