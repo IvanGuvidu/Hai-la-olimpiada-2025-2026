@@ -12,68 +12,63 @@ Adunarea și înmulțirea merg destul de simplu făcute
 
 
 $$
-(a + b) \% mod
+(a + b) \bmod M
 $$
 $$
-(a \cdot b) \% mod
-$$
-
-
-Pentru scădere, mai întâi, vom presupune că ambele numere sunt în intervalul $[0, mod-1]$, și atunci putem face:
-
-
-$$
-(a - b + mod) \% mod
+(a \cdot b) \bmod M
 $$
 
 
-Trebuie avut grijă să adăugăm $mod$ înainte de a face modulo, pentru a evita rezultatele negative.
+Pentru scădere, mai întâi, vom presupune că ambele numere sunt în intervalul $[0, M-1]$, și atunci putem face:
+
+$$
+(a - b + M) \bmod M
+$$
 
 
-Probleme mari apar însă la împărțire. Dacă vom dori să facem $\frac{a}{b} \ \% \ m$, nu putem face direct:
+Trebuie avut grijă să adăugăm $M$ înainte de a face modulo, pentru a evita rezultatele negative.
+Probleme mari apar însă la împărțire. Dacă vom dori să facem $\frac{a}{b} \ \% \ M$, nu putem face direct:
 
 
 $$
-(a \div b) \% mod
+(a \div b) \bmod M
 $$
 
 
 Vom rescrie acest calcul ca fiind 
 
 $$
-a \cdot b^{-1} \% mod
+a \cdot b^{-1} \bmod M
 $$
 
 
-unde $b^{-1}$ este **inversul modular** al lui $b$ modulo $mod$.
+unde $b^{-1}$ este **inversul modular** al lui $b$ modulo $M$.
 
 
-Vom trata doar cazul în care $mod$ este prim. În acest caz, inversul modular al lui $b$ modulo $mod$ poate fi calculat folosind **mica teoremă a lui Fermat**:
-
+Vom trata doar cazul în care $M$ este prim. În acest caz, inversul modular al lui $b$ modulo $M$ poate fi calculat folosind **mica teoremă a lui Fermat**.
 
 $$
-b^{-1} \equiv b^{mod-2} \% mod
+b^{-1} \equiv b^{M-2} \pmod{M}
 $$
 
 
-Fiindcă $mod$ este un număr de obicei mare, vom calcula $b^{mod-2} \% mod$ folosind **exponentierea rapidă**.
-
+Fiindcă $M$ este un număr de obicei mare, vom calcula $b^{M-2} \bmod M$ folosind **exponentierea rapidă**.
 
 În probleme, o să întâlnim deseori împărțirile la calculul combinărilor. Cum nu este deloc eficient să calculăm inversul modular al factorialelor, vom face următoarea precalculare:
 
 
 $$
-fact[i] = (fact[i-1] \cdot i) \% mod, \text{pentru } 1 \leq i \leq \textbf{n + 1}
+fact[i] = (fact[i-1] \cdot i) \bmod M, \text{pentru } 1 \leq i \leq \textbf{n + 1}
 $$
 
 
 $$
-invFact[n + 1] = lgput(fact[n + 1], mod - 2)
+invFact[n + 1] = lgput(fact[n + 1], M - 2)
 $$
 
 
 $$
-invFact[i] = (invFact[i + 1] \cdot (i + 1)) \% mod, \text{pentru } n \geq i \geq 1
+invFact[i] = (invFact[i + 1] \cdot (i + 1)) \bmod M, \text{pentru } n \geq i \geq 1
 $$
 
 
