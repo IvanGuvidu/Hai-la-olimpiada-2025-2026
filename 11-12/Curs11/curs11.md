@@ -10,18 +10,20 @@ De multe ori, când lucrăm cu aritmetică modulară, o să facem multe operați
 
 Adunarea și înmulțirea merg destul de simplu făcute
 
+
 $$
-(a + b) \ \% \ mod
+(a + b) \% mod
 $$
 $$
-(a \cdot b) \ \% \ mod
+(a \cdot b) \% mod
 $$
 
 
 Pentru scădere, mai întâi, vom presupune că ambele numere sunt în intervalul $[0, mod-1]$, și atunci putem face:
 
+
 $$
-(a - b + mod) \ \% \ mod
+(a - b + mod) \% mod
 $$
 
 
@@ -30,14 +32,16 @@ Trebuie avut grijă să adăugăm $mod$ înainte de a face modulo, pentru a evit
 
 Probleme mari apar însă la împărțire. Dacă vom dori să facem $\frac{a}{b} \ \% \ m$, nu putem face direct:
 
+
 $$
-(a \div b) \ \% \ mod
+(a \div b) \% mod
 $$
 
 
 Vom rescrie acest calcul ca fiind 
+
 $$
-a \cdot b^{-1} \ \% \ mod
+a \cdot b^{-1} \% mod
 $$
 
 
@@ -46,26 +50,30 @@ unde $b^{-1}$ este **inversul modular** al lui $b$ modulo $mod$.
 
 Vom trata doar cazul în care $mod$ este prim. În acest caz, inversul modular al lui $b$ modulo $mod$ poate fi calculat folosind **mica teoremă a lui Fermat**:
 
+
 $$
-b^{-1} \equiv b^{mod-2} \ \% \ mod
+b^{-1} \equiv b^{mod-2} \% mod
 $$
 
 
-Fiindcă $mod$ este un număr de obicei mare, vom calcula $b^{mod-2} \ \% \ mod$ folosind **exponentierea rapidă**.
+Fiindcă $mod$ este un număr de obicei mare, vom calcula $b^{mod-2} \% mod$ folosind **exponentierea rapidă**.
 
 
 În probleme, o să întâlnim deseori împărțirile la calculul combinărilor. Cum nu este deloc eficient să calculăm inversul modular al factorialelor, vom face următoarea precalculare:
 
+
 $$
-fact[i] = (fact[i-1] \cdot i) \ \% \ mod, \text{pentru } 1 \leq i \leq \textbf{n + 1}
+fact[i] = (fact[i-1] \cdot i) \% mod, \text{pentru } 1 \leq i \leq \textbf{n + 1}
 $$
+
 
 $$
 invFact[n + 1] = lgput(fact[n + 1], mod - 2)
 $$
 
+
 $$
-invFact[i] = (invFact[i + 1] \cdot (i + 1)) \ \% \ mod, \text{pentru } n \geq i \geq 1
+invFact[i] = (invFact[i + 1] \cdot (i + 1)) \% mod, \text{pentru } n \geq i \geq 1
 $$
 
 
