@@ -5,13 +5,11 @@ Astăzi o să vorbim despre probleme de geometrie computațională.
 De obicei, nu vom lucra în 3 dimensiuni, ci doar în 2D. Vom reprezenta punctele prin perechi de coordonate $(x, y)$. Știm foarte bine că distanța dintre două puncte este dată de formula: $\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.
 
 O să mai avem nevoie de formula pentru aria unui triunghi (cu semn), care este dată de:
-$$
-\text{Aria} = \begin{vmatrix}
-x_1 & y_1 & 1 \\
-x_2 & y_2 & 1 \\
-x_3 & y_3 & 1
-\end{vmatrix} = x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)
-$$
+
+<p align="center">
+    <img src="aria.png" alt="Aria triunghiului" style="max-width: 100%; height: auto;">
+</p>
+
 
 Deseori, vom folosi semnul ariei pentru a determina poziția relativă a punctelor. Dacă $aria(x, y, z) > 0$, atunci putem spune că $z$ este "deasupra" dreptei formate de $x$ și $y$ (adică în sens trigonometric). Dacă $aria(x, y, z) < 0$, atunci $z$ este "dedesubtul" dreptei formate de $x$ și $y$. Dacă aria este 0, atunci cele 3 puncte sunt colineare.
 
