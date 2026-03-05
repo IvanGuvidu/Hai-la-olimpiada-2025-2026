@@ -2,7 +2,7 @@
 
 ## Meet in the middle
 
-De multe ori, ne vom lovi cu probleme pe care știm să le rezolvăm în timp exponențial $O(2^N)$, dar ca, $N$ uneori poate este prea mare. O idee ar fi să împărțim problema în două, astfel încât fiecare jumătate să aibă o dimensiune de $N/2$. Dacă putem rezolva fiecare jumătate în timp $O(2^{N/2})$, atunci putem combina cele două jumătăți în timp $O(2^{N/2} \cdot 2^{N/2}) = O(2^N)$, ceea ce este mult mai eficient decât $O(2^N)$. Singura parte a problemei care rămâne este să găsim o modalitate de a combina cele două jumătăți într-un mod eficient. Tehnica de mai sus poartă numele de **meet in the middle**.
+De multe ori, ne vom lovi cu probleme pe care știm să le rezolvăm în timp exponențial $O(2^N)$, doar că, $N$ uneori poate este prea mare. O idee ar fi să împărțim problema în două, astfel încât fiecare jumătate să aibă o dimensiune de $N/2$. Singura parte a problemei care rămâne este să găsim o modalitate de a combina cele două jumătăți într-un mod eficient. Tehnica de mai sus poartă numele de **meet in the middle**. Această tehnica poate fi aplicată când $N \leq 40$.
 
 * [Vopsea](https://kilonova.ro/problems/2834)
 * [Tratatul pacii](https://www.hackerrank.com/contests/bpc2025/challenges/tratatul-pacii)
