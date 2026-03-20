@@ -21,13 +21,10 @@ $$
 ### Funcția Möbius
 
 Când lucrăm cu PINEX pe divizori, trebuie să avem grijă să nu numărăm de mai multe ori aceleași elemente. Pentru a face acest lucru, folosim funcția Möbius, care ne ajută să determinăm dacă un număr are un număr par sau impar de divizori primi. Funcția Möbius este definită astfel:
-$$
-\mu(n) = \begin{cases}
-0 & \text{dacă } n \text{ este un pătrat perfect} \\
-1 & \text{dacă } n = 1 \\
-(-1)^k & \text{dacă } n \text{ se scrie ca produs de } k \text{ divizori primi distincti}
-\end{cases}
-$$
+
+- $\mu(n) = 0$ dacă $n$ este un pătrat perfect
+- $\mu(n) = 1$ dacă $n = 1$
+- $\mu(n) = (-1)^k$ dacă $n$ se scrie ca produs de $k$ divizori primi distincti
 
 * [Pinex](https://www.infoarena.ro/problema/pinex) - soluție [aici](pinex.cpp)
 * [TreeGCD](https://www.infoarena.ro/problema/treegcd)
