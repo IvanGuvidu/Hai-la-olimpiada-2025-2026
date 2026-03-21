@@ -22,9 +22,9 @@ $$
 
 Când lucrăm cu PINEX pe divizori, trebuie să avem grijă să nu numărăm de mai multe ori aceleași elemente. Pentru a face acest lucru, folosim funcția Möbius, care ne ajută să determinăm dacă un număr are un număr par sau impar de divizori primi. Funcția Möbius este definită astfel:
 
-- $\mu(n) = 0$ dacă $n$ este un pătrat perfect
+- $\mu(n) = 0$ dacă $n$ are în factorizare un factor prim cel puțin la puterea a 2-a
 - $\mu(n) = 1$ dacă $n = 1$
-- $\mu(n) = (-1)^k$ dacă $n$ se scrie ca produs de $k$ divizori primi distincti
+- $\mu(n) = (-1)^k$ dacă $n$ se scrie ca produs de $k$ divizori primi distincți
 
 * [Pinex](https://www.infoarena.ro/problema/pinex) - soluție [aici](pinex.cpp)
 * [TreeGCD](https://www.infoarena.ro/problema/treegcd)
